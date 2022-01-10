@@ -1,0 +1,119 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Asset/Font/Minecraft.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Asset/menu and button/Background-day-1.png" type="Texture" id=2]
+[ext_resource path="res://Retry.gd" type="Script" id=3]
+[ext_resource path="res://Back to Menu.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+outline_color = Color( 0.156863, 0.0392157, 0.0392157, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.580392, 0.439216, 0.439216, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.580392, 0.439216, 0.439216, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.788235, 0.592157, 0.592157, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=5]
+outline_color = Color( 0.792157, 0.0509804, 0.0509804, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.580392, 0.439216, 0.439216, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.580392, 0.439216, 0.439216, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="TextureRect" parent="."]
+self_modulate = Color( 0.462745, 0.0470588, 0.0470588, 1 )
+anchor_right = 0.645
+anchor_bottom = 0.559
+margin_right = 349.52
+margin_bottom = 267.6
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = -168.848
+margin_top = 34.0201
+margin_right = 1198.15
+margin_bottom = 208.02
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.94902, 0.176471, 0.176471, 1 )
+text = "YOU DIED"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Retry" type="Button" parent="."]
+margin_left = 436.721
+margin_top = 275.0
+margin_right = 566.721
+margin_bottom = 308.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.784314, 0.0862745, 0.0862745, 1 )
+text = "Retry"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back to Menu" type="Button" parent="."]
+margin_left = 439.442
+margin_top = 349.821
+margin_right = 569.442
+margin_bottom = 382.821
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.784314, 0.0862745, 0.0862745, 1 )
+text = "Main Menu"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Retry" to="Retry" method="_on_Retry_pressed"]
+[connection signal="pressed" from="Back to Menu" to="Back to Menu" method="_on_Back_to_Menu_pressed"]

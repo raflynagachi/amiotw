@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dagger.wav-638d4ff2e89f9688ec8471f1019c1dea.sample"
+
+[deps]
+
+source_file="res://Asset/sound effect/dagger.wav"
+dest_files=[ "res://.import/dagger.wav-638d4ff2e89f9688ec8471f1019c1dea.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

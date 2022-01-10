@@ -1,0 +1,2 @@
+﻿33113
+/media/nagachi/Nagachi/Dev_Game/Godot_v3.3.3-stable_mono_x11_64/Godot_v3.3.3-stable_mono_x11.64

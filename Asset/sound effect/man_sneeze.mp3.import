@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/man_sneeze.mp3-d15acce8e43cfda66a8d2b46605ed5b3.mp3str"
+
+[deps]
+
+source_file="res://Asset/sound effect/man_sneeze.mp3"
+dest_files=[ "res://.import/man_sneeze.mp3-d15acce8e43cfda66a8d2b46605ed5b3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

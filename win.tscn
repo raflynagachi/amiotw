@@ -1,0 +1,115 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Asset/menu and button/Background-day-1.png" type="Texture" id=1]
+[ext_resource path="res://Back to Menu.gd" type="Script" id=2]
+[ext_resource path="res://Asset/Font/Minecraft.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+outline_size = 6
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFontData" id=6]
+font_path = "res://Asset/Font/Minecraft.ttf"
+
+[sub_resource type="DynamicFont" id=7]
+size = 20
+outline_size = 2
+font_data = SubResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.835294, 0.843137, 0.356863, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.835294, 0.843137, 0.356863, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.835294, 0.843137, 0.356863, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=5]
+outline_color = Color( 0.792157, 0.0509804, 0.0509804, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( -1260.87, -318.485 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="TextureRect" parent="."]
+anchor_right = 0.645
+anchor_bottom = 0.559
+margin_right = 1004.2
+margin_bottom = 584.64
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = -168.848
+margin_top = 34.0201
+margin_right = 1198.15
+margin_bottom = 208.02
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.890196, 0.733333, 0.117647, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "YOU WIN!!!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 384.598
+margin_top = 226.499
+margin_right = 662.598
+margin_bottom = 340.499
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0.823529, 0.803922, 0.729412, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "We have a secret stage"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back to Menu" type="Button" parent="."]
+margin_left = 456.495
+margin_top = 232.424
+margin_right = 586.495
+margin_bottom = 265.424
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.784314, 0.0862745, 0.0862745, 1 )
+text = "Main Menu"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Back to Menu" to="Back to Menu" method="_on_Back_to_Menu_pressed"]
